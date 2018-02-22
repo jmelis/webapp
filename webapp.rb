@@ -1,4 +1,6 @@
 require 'sinatra'
+require 'pp'
+
 get '/' do
-    "tis but a scratch #{ENV['JAIME_ENV_TEST']}"
+    PP.pp(ENV,"")
 end
